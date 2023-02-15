@@ -1,0 +1,163 @@
+/*_________________________General_________________________*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-color {
+    color: #787878;
+}
+.background-color {
+    background: rgba(12, 12, 12, 0.7)
+}
+
+/*_________________________Navbar_________________________*/
+
+.title {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+}
+
+/*_________________________Section 1_________________________*/
+.part1{
+    padding: 110px 50px;
+    margin: 20px 0;
+}
+.img1{
+    width: 40%;
+    float: left;
+    padding-left: 50px;
+}
+.img1 img{
+    width: 95%;
+}
+.par1{
+    width: 39%;
+    float: right;
+    padding: 10px 120px 0 0;
+    line-height: 30px;
+    font-family: 'Alegreya', serif;
+}
+
+/*_________________________Section 2_________________________*/
+.part2{
+    padding: 110px 50px;
+    background-color: rgb(248, 247, 247);
+}
+.img2{
+    width: 40%;
+    float: right;
+    padding-right: 50px;
+}
+.img2 img{
+    width: 95%;
+}
+.par2{
+    width: 39%;
+    float: left;
+    padding: 50px 70px;
+    line-height: 30px;
+    font-family: 'Alegreya', serif;
+}
+.clr{
+    clear: both;
+}
+
+
+/*_________________________Section 3_________________________*/
+.part3{
+    margin: 100px 0;
+    text-align: center;
+    font-family: 'Alegreya', serif;
+}
+.members{
+    padding: 20px 0;
+}
+.member{
+    width: 25%;
+    display: inline-block;
+    padding: 12px;
+    line-height: 30px;
+}
+.member img{
+    width: 97%;
+}
+.member h3{
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/*_________________________Pricing_________________________*/
+
+.underline::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(197, 196, 196, 0.5);
+    height: 0.6px;
+    width: 50%;
+    right: 65px;
+    justify-content: center;
+}
+
+.bg-color {
+    background-color: #F7F7F7;
+}
+
+.value {
+    font-size: x-small;
+    padding: 6px 15px;
+    border-radius: 4px;
+    background-color: #988663;
+    border: none;
+}
+
+.best {
+    color: #988663;
+}
+
+/*_________________________Contact_________________________*/
+
+.img-size {
+    width: 15%;
+}
+
+/*_________________________Footer_________________________*/
+
+footer {
+    background-color: #545454;
+    color: white;
+    margin-top: 100px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #191919;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+.icons{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+.aleg{
+    font-family: 'Alegreya', serif;
+}
+.grey{
+    color: #b4b3b3;
+}

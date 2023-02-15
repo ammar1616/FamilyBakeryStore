@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+
+    <!--------------------Navbar-------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand title" href="../html/index.html">Family Bakery</a>
+            <div class="d-flex">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-2 mt-1">
+                    <li class="nav-item"><i class="fab fa-facebook-f nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-twitter nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-instagram nav-link"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------/Navbar-------------------->
+
+
+    <div class="wrapper to">
+        <div class="inner">
+            <form action="../php/modules/users/signin.php" method="post">
+                <h3 class="pt-5">SIGN IN</h3>
+                <div class="form-wrapper mb-4">
+                    <label for="email">Email:</label>
+                    <div class="form-holder">
+                        <input type="email" name="email" id="signinemail" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <label for="pass">Password:</label>
+                    <div class="form-holder">
+                        <input type="password" name="pass" id="signinpass" class="form-control signin mb-4" placeholder="">
+                    </div>
+                </div>
+                <div class="pb-5">
+                    <button type="submit" id="logInButton" class="about-btn border w-100">Sign In</button>
+                    <div class="mt-2">
+                        <a href="../html/signup.html" class="forgot text-dark">I don't have an account.</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

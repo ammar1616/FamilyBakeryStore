@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/catering.css">
+</head>
+
+<body>
+
+    <!--------------------Navbar-------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand title" href="../html/index.html">Family Bakery</a>
+            <div class="d-flex">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Specials</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#reservation">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-2 mt-1">
+                    <li class="nav-item"><i class="fab fa-facebook-f nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-twitter nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-instagram nav-link"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------/Navbar-------------------->
+
+    <!--------------------Reservation-------------------->
+    <section class="reservation">
+        <div class="container">
+            <div class="container mb-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="text-center mb-5 mt-4">
+                            <h2 class="display-3">Reserve Table</h2>
+                            <p class="font-weight-light par-size h5 line-height my-4 text-color">Please fill the form
+                                below accurately to enable us serve you better!.. welcome!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="inner">
+                <form action="../php/modules/reservations/reserve.php" method="post">
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="fname">First name*</label>
+                            <div class="form-holder">
+                                <input type="text" name="fname" id="signupfname" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="lname">Last name*</label>
+                            <div class="form-holder">
+                                <input type="text" name="lname" id="signuplname" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper mb-4">
+                        <label for="email">Email*</label>
+                        <div class="form-holder">
+                            <input type="email" name="email" id="signupemail" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="phone">Phone*</label>
+                            <div class="form-holder">
+                                <input type="text" name="phone" id="signupphone" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="guests">Number of Guests* (Max 30)</label>
+                            <div class="form-holder">
+                                <input type="text" name="guests" id="guestsnum" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-wrapper">
+                            <label for="type">Reservation Type*</label>
+                            <div class="form-holder select">
+                                <select name="type" id="restype" class="form-control">
+                                    <option disabled selected value>Select Your Reservation Type</option>
+                                    <option value="breakfast">Breakfast</option>
+                                    <option value="lunch">Lunch</option>
+                                    <option value="dinner">Dinner</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="date">Date*</label>
+                            <div class="form-holder">
+                                <input type="date" name="date" id="resdate" class="form-control" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper mb-4">
+                        <label for="requests">Any special requests:</label>
+                        <div class="form-holder">
+                            <textarea name="other" class="form-control" rows="7" placeholder=""></textarea>
+                            </textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="alert text-danger pt-3 text-center d-none" id="checkInput">Fill All Required Inputs</div>
+                        <button type="submit" id="reserve" class="about-btn border w-100">Request Reservation</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------/Reservation-------------------->
+
+    <!--------------------Footer-------------------->
+    <footer class="mainfooter py-4">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row pb-5 pt-3">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>About us</h4>
+                            <p class="mt-4 aleg grey">
+                                When it comes to food, Family Bakery can awaken even the pickiest senses.
+                                We offer only the freshest ingredients possible, maintaining an unmatched quality
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>Why we are special?</h4>
+                            <ul class="list-unstyled aleg mt-4 grey">
+                                <p>Our magical recipe.</p>
+                                <p>We care about environment.</p>
+                                <p>We are trusted by hundreds of clients.</p>
+                                <p>Social media loves us!</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>Opening Hours</h4>
+                            <ul class="list-unstyled aleg mt-4 grey">
+                                <li>
+                                    <p>Monday 10AM - 9PM</p>
+                                </li>
+                                <li>
+                                    <p>Tuesday 10AM - 9PM</p>
+                                </li>
+                                <li>
+                                    <p>Wednesday 10AM - 9PM</p>
+                                </li>
+                                <li>
+                                    <p>Thursday 10AM - 10PM</p>
+                                </li>
+                                <li>
+                                    <p>Friday 10AM - 10PM</p>
+                                </li>
+                                <li>
+                                    <p>Weekends 10AM - 11PM</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-pad">
+                            <h4>Contact Detailss</h4>
+                            <ul class="list-unstyled aleg mt-4 grey">
+                                <li>
+                                    <p>Manchester Road 123-78B, Silictown 7854MD, Great Country</p>
+                                </li>
+                                <li>
+                                    <p>+20 102 631 5419</p>
+                                </li>
+                                <li>
+                                    <p>www.BakeryHouse.com</p>
+                                </li>
+                                <li>
+                                    <p>BakeryHouse@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2022 - Family Bakery. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------/Footer-------------------->
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/catering.js"></script>
+</body>
+
+</html>

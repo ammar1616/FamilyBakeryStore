@@ -1,0 +1,147 @@
+/*_________________________General_________________________*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-color {
+    color: #787878;
+}
+
+.background-color {
+    background: rgba(12, 12, 12, 0.7)
+}
+
+/*_________________________Navbar_________________________*/
+
+.title {
+    font-family: 'Alegreya', serif;
+    font-size: 30px;
+}
+
+
+/*_________________________Menu_________________________*/
+
+.bake-food-menu {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+.bake-food-menu h2 {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.bake-food-menu h2.bake-drinks {
+    padding-left: 50px;
+}
+
+
+.bake-food-menu h2.bake-dishes {
+    padding-left: 80px;
+}
+
+.bake-food-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bake-food-menu ul li {
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.bake-food-menu ul li .bake-food-desc {
+    float: left;
+    width: 80%;
+}
+
+.bake-food-menu ul li .bake-food-desc>figure {
+    width: 20%;
+    float: left;
+    position: relative;
+    margin-right: 4%;
+}
+
+.bake-food-menu ul li .bake-food-desc>figure img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0;
+}
+
+.bake-food-menu ul li .bake-food-desc>div {
+    width: 75%;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bake-food-menu ul li .bake-food-desc>div p {
+    margin: 0;
+}
+
+.bake-food-menu ul li .bake-food-desc>div h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+.bake-food-menu ul li .bake-food-pricing {
+    float: right;
+    width: 20%;
+    text-align: right;
+    font-size: 20px;
+    color: #988663;
+}
+
+/*_________________________Footer_________________________*/
+
+footer {
+    background-color: #545454;
+    color: white;
+    margin-top: 100px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #191919;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+
+.icons {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.aleg {
+    font-family: 'Alegreya', serif;
+}
+
+.grey {
+    color: #b4b3b3;
+}

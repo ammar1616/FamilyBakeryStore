@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+
+    <!--------------------Navbar-------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand title" href="../html/index.html">Family Bakery</a>
+            <div class="d-flex">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Specials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../html/catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-2 mt-1">
+                    <li class="nav-item"><i class="fab fa-facebook-f nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-twitter nav-link"></i></li>
+                    <li class="nav-item"><i class="fab fa-instagram nav-link"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--------------------/Navbar-------------------->
+    <div class="wrapper">
+        <div class="inner">
+            <form action="../php/modules/users/signup.php" method="post">
+                <h3>SIGN UP</h3>
+                <div class="form-group">
+                    <div class="form-wrapper">
+                        <label for="fname">First name:</label>
+                        <div class="form-holder">
+                            <input type="text" name="fname" id="signupfname" class="form-control" placeholder="">
+                            <div id="firstNameAlert" class="alert alert-danger my-2 d-none ">Name begins by capital</div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="lname">Last name:</label>
+                        <div class="form-holder">
+                            <input type="text" name="lname" id="signuplname" class="form-control" placeholder="">
+                            <div id="lastNameAlert" class="alert alert-danger my-2 d-none ">Name begins by capital</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-wrapper mb-4">
+                    <label for="email">Email:</label>
+                    <div class="form-holder">
+                        <input type="email" name="email" id="signupemail" class="form-control" placeholder="">
+                        <div id="emailAlert" class="alert alert-danger my-2 d-none ">Must be an email</div>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <label for="pass">Password:</label>
+                    <div class="form-holder">
+                        <input type="password" name="pass" id="signuppass" class="form-control" placeholder="">
+                        <div id="passAlert" class="alert alert-danger my-2 d-none ">Password is at least 4 characters</div>
+                    </div>
+                </div>
+                <div class="form-wrapper">
+                    <label for="phone">Phone:</label>
+                    <div class="form-holder">
+                        <input type="text" name="phone" id="signupphone" class="form-control" placeholder="">
+                        <div id="phoneAlert" class="alert alert-danger my-2 d-none ">Phone number must be 11 digits</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="alert text-danger pt-3 text-center d-none" id="checkInput">All inputs is required</div>
+                    <button type="submit" id="signup" class="about-btn border w-100">Sign Up</button>
+                    <a href="../html/signin.html" class="forgot text-dark text-center">Have an account? Sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>
